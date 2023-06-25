@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./12_style.css" />
+  <!-- method 1- <script src="13_touch.js"></script>
+   is html file ko browser parsing karega meand sare code dekhe ga line by line 
+   and jb line no. 8 par aayega to js file kp load karega -->
+  <!-- lekin ye tarika sahi nahi hota  -->
+
+
+
+
+
+  <!-- <script src="13_touch.js" async></script>></script> -->
+  <!-- method-3 esme parsing ke sath sath js ki file load hogi dono kam sath sath hogi 
+   parsing and loading tb tk sath sath hogi jb tk js file load nahi ho jata after loading 
+   parsing ruk jayga js file excute hoga
+lekin esme error aa skta kyu ki html file sara parsing hua hi nahi -->
+
+
+
+
+
+  <!-- <script src="./14_DOM.js" defer></script> -->
+  <!-- <script src="./15_query_selecter.js" defer></script> -->
+  <!-- <script src="./16_textselct.js" defer></script> -->
+  <!-- <script src="./17_chg_styl_ele.js" defer></script> -->
+  <!-- <script src="./18_get_set_atrrib.js" defer></script> -->
+  <!-- <script src="./19_get_multiple.js" defer></script> -->
+  <!-- <script src="./20_loop.js" defer></script> -->
+  <!-- <script src="./21_innerHTML.js" defer></script>  -->
+  <!-- <script src="./25_classlist1index.js" defer></script>  -->
+  <!-- <script src="./26_addHTML_ele.js" defer></script>  -->
+  <!-- <script src="./27_createlement.js" defer></script>  -->
+  <!-- <script src="./28_imp_Prop.js" defer></script>  -->
+  <!-- <script src="./30_someImp.js" defer></script>  -->
+  <!-- <script src="./31_static_list_live_list.js" defer></script> -->
+  <!-- <script src="./32_dimension_of_ele.js" defer></script> -->
+  <!-- <script src="./33_introevent.js" defer></script> -->
+  <!-- <script src="./34_thiskeyword.js" defer></script> -->
+  <!-- <script src="./40_12_index_event.js" defer></script> -->
+  <script src="./41_12_index_project_cplt.js" defer></script>
+  <!-- best method  -->
+  <!-- best method  -->
+  <!-- esme parsing and js file loading sath sath hogi and loading hone ke bad bhi parsing hoti rahegi html file
+-->
+  <title>My Website</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <h1 class="logo">Website</h1>
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="">Todo</a></li>
+        <li class="nav-item"><a href="">Sign Up</a></li>
+      </ul>
+    </nav>
+    <div class="headline">
+      <h2 id="main-heading">
+        Manage your tasks <span style="display: none">Hello</span>
+      </h2>
+      <button class="btn btn-headline">Learn More</button>
+    </div>
+  </header>
+
+  <section class="section-todo container">
+    <h2>Your plan for today ?</h2>
+    todo form
+    <form class="form-todo">
+      <input type="text" name="" id="" placeholder="Add Todo" />
+      <input type="submit" value="Add Todo" class="btn" />
+    </form>
+
+    <ul class="todo-list">
+      <li class="first-todo">
+        <!-- <span class="text">Do this do that</span> -->
+          <!-- <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+          <li>item4</li>
+          <li>item5</li> -->
+        <div class="todo-buttons">
+          <button class="todo-btn done">Done</button>
+          <button class="todo-btn remove">Remove</button>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section-signup container">
+    <h2>Sign Up</h2>
+    <form class="signup-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" id="confirmPassword" />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="form-group">
+        <label for="about">About Yourself</label>
+        <textarea name="about" id="about" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit" class="btn signup-btn">Submit</button>
+    </form>
+  </section>
+  <!-- <script src="13_touch.js"></script> -->
+  <!-- second method- html ko parsing(reading complie) hogi phir js ko load hogi phir excute hogi(time jayeda lagaga lagega) kam synchronous ho raha hai(line by line) -->
+</body>
+
+</html>
